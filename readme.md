@@ -3,7 +3,7 @@
 
 <h1 align="center">
   <br>
-  <a href="https://github.com/emayolle/lgpro"><img src="" alt="LGPro" width="200"></a>
+  <a href="https://github.com/emayolle/lgpro"><img src="https://www.logitechg.com/content/dam/logitech/en/nav/brand-logos/new/logitech.svg" alt="LGPro" width="300"></a>
   <br>
   LGPro
   <br>
