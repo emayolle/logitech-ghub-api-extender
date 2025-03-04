@@ -3,9 +3,9 @@
 
 <h1 align="center">
   <br>
-  <a href="https://github.com/emayolle/lgpro"><img src="https://www.logitechg.com/content/dam/logitech/en/nav/brand-logos/new/logitech.svg" alt="LGPro" width="300"></a>
+  <a href="https://github.com/emayolle/logitech-ghub-api-extender"><img src="https://www.logitechg.com/content/dam/logitech/en/nav/brand-logos/new/logitech.svg" alt="logitech-ghub-api-extender" width="300"></a>
   <br>
-  LGPro
+  Logitech G-HUB Lua API Extender
   <br>
 </h1>
 
