@@ -34,8 +34,8 @@ jobs:
       run: cmake --build ${{github.workspace}} --config ${{env.BUILD_TYPE}}
 
     - name: Check executable exists
-      working-directory: ${{github.workspace}}/${{env.BUILD_TYPE}}
-      run: if (Test-Path LGProLib.dll) { Exit($False) } else { Exit($True) }
+      working-directory: ${{github.workspace}}/build/${{env.BUILD_TYPE}}
+      run: if ((Test-Path lgextender.dll) -and (Test-Path launcher.exe)) { Exit($False) } else { Exit($True) }
 
     - uses: ncipollo/release-action@v1
       with:
@@ -43,4 +43,4 @@ jobs:
         prerelease: true
         tag: "dev"
         commit: "main"
-        artifacts: ${{env.BUILD_TYPE}}/*.dll
+        artifacts: build/${{env.BUILD_TYPE}}/*.dll, build/${{env.BUILD_TYPE}}/*.exe

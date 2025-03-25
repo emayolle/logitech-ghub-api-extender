@@ -9,7 +9,7 @@
   <br>
 </h1>
 
-<h4 align="center">A library extender of the Lua API for <code>Logitech HUB</code> engine, that allows a user to create his own Lua CFunction / logic integration.</h4>
+<h4 align="center">A library extender of the Lua API for <code>Logitech G-HUB</code> engine, that allows a user to create his own Lua CFunction / logic integration.</h4>
 
 
 <p align="center">
@@ -25,16 +25,18 @@
 <!-- ![screenshot](https://raw.githubusercontent.com/emayolle/django_final/main/git_images/exemple.gif) -->
 
 > **Note**
-> Support version **__2025.1.673329__** of LGHub
+> Support version **__2024.8.641856__** &rarr; **__2025.2.687008__** of Logitech G-Hub
+
+> Your version can be found from the Logitech G-HUB application in `Settings > About`
 
 ## Context
-The [Logitech Hub](https://www.logitechg.com/fr-fr/innovation/g-hub.html) is an application platform designed to integrate various [Logitech devices](https://www.logitechg.com/), offering a centralized control interface for users to manage their connected hardware. This includes devices like keyboards, mice, speakers, and more, allowing for streamlined interaction and automation.
+The [Logitech G-Hub](https://www.logitechg.com/fr-fr/innovation/g-hub.html) is an application platform designed to integrate various [Logitech devices](https://www.logitechg.com/), offering a centralized control interface for users to manage their connected hardware. This includes devices like keyboards, mice, speakers, and more, allowing for streamlined interaction and automation.
 
-The [Lua](https://www.lua.org/) API provided by the Logitech Hub is a powerful tool that enables programmable control over these devices using the Lua scripting language. Every G-series Profile has a default Lua script bound to it which can be edited and customized.
+The [Lua](https://www.lua.org/) API provided by the Logitech G-Hub is a powerful tool that enables programmable control over these devices using the Lua scripting language. Every G-series Profile has a default Lua script bound to it which can be edited and customized.
 The script is invoked using an event handler, OnEvent. Users may examine the various events
 exposed in this handler to perform their desired actions.
 
-The Lua version used is [Lua 5.4](https://www.lua.org/versions.html#5.4) with methods or functions added by the Logitech Hub API.
+The Lua version used is [Lua 5.4](https://www.lua.org/versions.html#5.4) with methods or functions added by the Logitech G-Hub API.
 
 > **Note**
 > Logitech Lua API can be found on [this page](https://douile.com/logitech-toggle-keys/APIDocs.pdf).
@@ -64,9 +66,11 @@ cmake --build .
 
 ## How To Use
 
-<!-- To use the project, you need to run `build/LGPro.exe`. -->
-To use the project, you need to have a DLL Injector to inject the `build/LGProLib.dll` in the process name `lghub_agent.exe`.
-
+<!-- To use the project, you need to run `build/launcher.exe`. -->
+<!-- To use the project, you need to have a DLL Injector to inject the `build/lgextender.dll` in the process name `lghub_agent.exe`. -->
+To use the project, you have 2 options:
+1. You can use the `build/launcher.exe` to inject the `build/lgextender.dll` in the process name `lghub_agent.exe`.
+2. You can use a DLL Injector to inject the `build/lgextender.dll` in the process name `lghub_agent.exe`.
 > **Note**
 > You can also use [Process Hacker](https://processhacker.sourceforge.io/downloads.php), right-click on the process, and select "Miscellaneous > Inject DLL" to inject the DLL.
 
